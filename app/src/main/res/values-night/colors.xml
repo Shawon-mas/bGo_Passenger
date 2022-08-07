@@ -6,6 +6,6 @@
     <!--  customised color-->
     <color name="textPrimaryColor">#080D28</color>
     <color name="textSecondaryColor">#A6AAB9</color>
-    <color name="backgroundColor">#FFFFFF</color>
+    <color name="backgroundColor">#000000</color>
 
 </resources>

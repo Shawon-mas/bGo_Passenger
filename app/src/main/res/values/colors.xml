@@ -9,6 +9,8 @@
     <color name="textSecondaryColor">#A6AAB9</color>
     <color name="backgroundColor">#FFFFFF</color>
     <color name="mainColor">#0096D0</color>
+    <color name="bGo_inputBg">#F1F2F3</color>
+    <color name="bGo_inputBoxColor">#525879</color>
 
 
 </resources>
