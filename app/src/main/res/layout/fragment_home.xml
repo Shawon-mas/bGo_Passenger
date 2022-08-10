@@ -1,14 +1,215 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     tools:context=".view.homeFragmentUi.Home">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="?actionBarSize">
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:layout_marginHorizontal="@dimen/_10sdp"
+               android:id="@+id/home_profile_image"
+               android:layout_width="@dimen/_35sdp"
+               android:layout_height="@dimen/_35sdp"
+               android:layout_centerVertical="true"
+               android:background="@drawable/shape_oval"
+               android:src="@drawable/profile_p"
+               android:padding="@dimen/_5sdp"
+               android:scaleType="centerCrop"
+               android:tint="@color/bGo_inputBg"
+               android:tintMode="screen"
+               />
+           <TextView
+               android:layout_toRightOf="@id/home_profile_image"
+               android:layout_centerVertical="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/profile"
+               android:fontFamily="@font/sf_ui_display_medium"
+               android:textSize="@dimen/_16ssp"
+               android:textColor="@color/textPrimaryColor"
+               />
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/notification"
+               android:layout_alignParentEnd="true"
+               android:layout_centerVertical="true"
+               android:layout_marginEnd="@dimen/_10sdp"/>
+       </RelativeLayout>
+       <TextView
+           android:layout_marginHorizontal="@dimen/_10sdp"
+           android:layout_marginTop="@dimen/_20sdp"
+           android:layout_width="match_parent"
+           android:text="@string/home_text"
+           android:textColor="@color/textPrimaryColor"
+           android:fontFamily="@font/sf_ui_display_medium"
+           android:textSize="@dimen/_20ssp"
+           android:textStyle="bold"
+           android:layout_height="wrap_content"/>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
 
-</FrameLayout>
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_40sdp"
+               android:layout_centerVertical="true"
+               android:layout_marginHorizontal="@dimen/_10sdp"
+               android:layout_marginTop="@dimen/_30sdp"
+               android:background="@drawable/input_box"
+               android:hint="Search your desire vehicle"
+               android:paddingStart="@dimen/_8sdp"
+               android:paddingEnd="@dimen/_8sdp" />
+           <EditText
+               android:layout_width="@dimen/_50sdp"
+               android:layout_height="@dimen/_40sdp"
+               android:layout_centerVertical="true"
+               android:layout_alignParentEnd="true"
+               android:layout_marginHorizontal="@dimen/_10sdp"
+               android:background="@drawable/search_box" />
+           <ImageView
+               android:layout_centerVertical="true"
+               android:layout_alignParentEnd="true"
+               android:layout_marginHorizontal="@dimen/_20sdp"
+               android:layout_width="@dimen/_30sdp"
+               android:padding="@dimen/_5sdp"
+               android:layout_height="@dimen/_30sdp"
+               android:src="@drawable/search_white"/>
+
+       </RelativeLayout>
+       <LinearLayout
+           android:layout_marginTop="@dimen/_10sdp"
+           android:layout_marginHorizontal="@dimen/_5sdp"
+           android:weightSum="2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <com.google.android.material.card.MaterialCardView
+               app:cardElevation="@dimen/_5ssp"
+               app:cardBackgroundColor="@color/cardBackground_primaryColor"
+               app:cardUseCompatPadding="true"
+               app:cardCornerRadius="@dimen/_6sdp"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="@dimen/_150sdp">
+               <LinearLayout
+                   android:gravity="center_horizontal|center_vertical"
+                   android:layout_width="match_parent"
+                   android:orientation="vertical"
+                   android:layout_height="match_parent">
+                   <ImageView
+                       android:layout_width="@dimen/_50sdp"
+                       android:layout_height="@dimen/_50sdp"
+                       android:src="@drawable/menu_one"/>
+                   <TextView
+                       android:layout_marginTop="@dimen/_10sdp"
+                       android:textSize="@dimen/_15ssp"
+                       android:textColor="@color/textPrimaryColor"
+                       android:fontFamily="@font/sf_ui_display_medium"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/car_rental"
+                       />
+               </LinearLayout>
+           </com.google.android.material.card.MaterialCardView>
+           <com.google.android.material.card.MaterialCardView
+               app:cardElevation="@dimen/_5ssp"
+               app:cardBackgroundColor="@color/cardBackground_primaryColor"
+               app:cardUseCompatPadding="true"
+               app:cardCornerRadius="@dimen/_6sdp"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="@dimen/_150sdp">
+               <LinearLayout
+                   android:gravity="center_horizontal|center_vertical"
+                   android:layout_width="match_parent"
+                   android:orientation="vertical"
+                   android:layout_height="match_parent">
+                   <ImageView
+                       android:layout_width="@dimen/_50sdp"
+                       android:layout_height="@dimen/_50sdp"
+                       android:src="@drawable/bbike"/>
+                   <TextView
+                       android:layout_marginTop="@dimen/_10sdp"
+                       android:textSize="@dimen/_15ssp"
+                       android:textColor="@color/textPrimaryColor"
+                       android:fontFamily="@font/sf_ui_display_medium"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/bbike"
+                       />
+               </LinearLayout>
+           </com.google.android.material.card.MaterialCardView>
+
+
+       </LinearLayout>
+       <TextView
+           android:layout_marginHorizontal="@dimen/_10sdp"
+           android:layout_marginTop="@dimen/_10sdp"
+           android:layout_width="match_parent"
+           android:text="@string/home_text2"
+           android:textColor="@color/textPrimaryColor"
+           android:fontFamily="@font/sf_ui_display_medium"
+           android:textSize="@dimen/_20ssp"
+           android:textStyle="bold"
+           android:layout_height="wrap_content"/>
+       <com.google.android.material.button.MaterialButton
+           android:textAllCaps="false"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_45sdp"
+           android:layout_marginHorizontal="@dimen/_10sdp"
+           android:layout_marginTop="@dimen/_20sdp"
+           android:text="Your Upcoming trips"
+           android:fontFamily="@font/sf_ui_display"
+           app:cornerRadius="@dimen/_5sdp"
+           android:gravity="start|center_vertical"
+           android:drawableEnd="@drawable/calendar"
+           />
+       <RelativeLayout
+           android:layout_marginBottom="@dimen/_10sdp"
+           android:layout_marginTop="@dimen/_10sdp"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_35sdp">
+           <TextView
+               android:paddingStart="@dimen/_12sdp"
+               android:textColor="@color/white"
+               android:fontFamily="@font/sf_ui_display"
+               android:textSize="@dimen/_12ssp"
+               android:background="@drawable/search_box"
+               android:layout_centerVertical="true"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_45sdp"
+               android:layout_marginHorizontal="@dimen/_10sdp"
+               android:text="Bidding Page"
+               app:cornerRadius="@dimen/_5sdp"
+               android:gravity="center_vertical"
+
+               />
+           <ImageView
+               android:padding="@dimen/_5sdp"
+               android:layout_centerVertical="true"
+               android:layout_marginHorizontal="@dimen/_10sdp"
+               android:layout_width="@dimen/_30sdp"
+               android:layout_height="@dimen/_30sdp"
+               android:src="@drawable/arrow_white"
+               android:layout_alignParentEnd="true"/>
+       </RelativeLayout>
+   </LinearLayout>
+
+
+
+
+
+
+
+
+
+</ScrollView>

@@ -7,41 +7,7 @@
     android:orientation="vertical"
     tools:context=".view.HomeActivity">
 
-    <RelativeLayout
 
-        android:layout_width="match_parent"
-        android:layout_height="?actionBarSize">
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_marginHorizontal="@dimen/_10sdp"
-            android:id="@+id/profile_image"
-            android:layout_width="@dimen/_35sdp"
-            android:layout_height="@dimen/_35sdp"
-            android:layout_centerVertical="true"
-            android:background="@drawable/shape_oval"
-            android:src="@drawable/profile_p"
-            android:padding="@dimen/_5sdp"
-            android:scaleType="centerCrop"
-            android:tint="@color/bGo_inputBg"
-            android:tintMode="screen"
-            />
-        <TextView
-            android:layout_toRightOf="@id/profile_image"
-            android:layout_centerVertical="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/profile"
-            android:fontFamily="@font/sf_ui_display_medium"
-            android:textSize="@dimen/_16ssp"
-            android:textColor="@color/textPrimaryColor"
-            />
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/notification"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="@dimen/_10sdp"/>
-    </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

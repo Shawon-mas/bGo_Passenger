@@ -21,11 +21,13 @@ public class AccountCreatActivity extends AppCompatActivity {
     private ActivityAccountCreatBinding binding;
     private AccountPageAdapter adapter;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding=ActivityAccountCreatBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
         clickListener();
         stepViewImplement();
 
@@ -73,7 +75,8 @@ public class AccountCreatActivity extends AppCompatActivity {
         });
 
         binding.done.setOnClickListener(v -> {
-            startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+
+           startActivity(new Intent(getApplicationContext(), HomeActivity.class));
         });
 
     }

@@ -20,4 +20,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="personal_profile">Creat account</string>
+    <string name="home_text">Let’s Find Your \nCar Rental for Trip</string>
+    <string name="car_rental">CAR RENTAL</string>
+    <string name="bbike">BBIKE</string>
+    <string name="home_text2">Let’s Check Your \nUpcoming Trip</string>
 </resources>

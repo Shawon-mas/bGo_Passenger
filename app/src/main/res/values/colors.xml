@@ -13,6 +13,7 @@
     <color name="bGo_inputBoxColor">#525879</color>
 
     <color name="cardBackground_color">#F3F3F3</color>
+    <color name="cardBackground_primaryColor">#FFFFFF</color>
     <color name="bGo_imageBg">#C4C4C4</color>
 
 

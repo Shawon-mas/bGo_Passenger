@@ -29,11 +29,8 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Intent i = new Intent(SplashActivity.this, LoginActivity.class);
-
-               /* Pair[] pairs=new Pair[2];
-                pairs[0]=new Pair(binding.splashImage,"applogo_transition");
-                ActivityOptionsCompat optionsCompat=ActivityOptionsCompat.makeSceneTransitionAnimation(SplashActivity.this,pairs);*/
                 startActivity(i);
+                finish();
 
 
             }
