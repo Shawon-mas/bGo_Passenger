@@ -8,4 +8,16 @@
     <string name="otp_send">Enter the 6 digit number that we sent to your given mobile number</string>
     <string name="didntreceived_otp">Didn’t receive any OTP number !</string>
     <string name="resend">Resend code again.</string>
+    <string name="profile">Profile</string>
+    <string name="home">Home</string>
+    <string name="offer">Offer</string>
+    <string name="history">History</string>
+    <string name="setting">Settings</string>
+    <string name="one">1.Show your face inside the frame</string>
+    <string name="two">2.Try to take clear fresh image.</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="personal_profile">Creat account</string>
 </resources>

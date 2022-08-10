@@ -2,25 +2,32 @@ package com.app.bGoPassenger.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.transition.Fade;
 import android.view.View;
 import android.view.WindowManager;
 
 import com.app.bGoPassenger.R;
+import com.app.bGoPassenger.databinding.ActivityLoginBinding;
 
 public class LoginActivity extends AppCompatActivity {
+    private ActivityLoginBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        binding=ActivityLoginBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        clickListeners();
 
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-
+    private void clickListeners() {
+        binding.loginLoginButton.setOnClickListener(v -> {
+            startActivity(new Intent(getApplicationContext(),OtpActivity.class));
+        });
     }
+
+
 }
